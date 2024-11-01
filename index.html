@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="weather-app-container">
+      <h1>WEATHER APP</h1>
+
+      <div class="search-bar-container">
+        <div class="input-container">
+          <input type="search" id="search_bar" />
+          <div class="error" id="search_bar_error"></div>
+        </div>
+        <button id="search_button">
+          <img src="images/white-magnify.png" alt="" />
+        </button>
+      </div>
+      <div class="invisible-container" id="invisible_container"></div>
+      <div class="weather-info-container" id="weather_info_container">
+        <h2 id="location">
+          Draperstown, Magherafelt, Northern Ireland, United Kingdom
+        </h2>
+        <div class="divider"></div>
+        <div class="main-info">
+          <div class="left-side">
+            <div class="forecast-info">
+              <div class="forecast-title">Forecast</div>
+              <div class="forecast-sub-containers">
+                <div class="img-container">
+                  <img src="" alt="" id="forecast_icon" />
+                </div>
+                <div class="data-container">
+                  <div class="forecast-temp" id="forecast_temp"></div>
+                  <div class="forecast-condition" id="forecast_condition"></div>
+                  <div class="forecast-feelslike" id="forecast_feelslike"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="wind-info">
+              <div class="wind-title">Wind</div>
+              <div class="wind-sub-containers">
+                <div class="img-container">
+                  <img src="images/wind-icon.png" alt="" id="wind_icon" />
+                </div>
+                <div class="data-container">
+                  <div class="wind-speed" id="wind_speed"></div>
+                  <div class="wind-gust-speed" id="wind_gust_speed"></div>
+                  <div class="wind-direction-container">
+                    <div class="wind-dir" id="wind_dir"></div>
+                    <img
+                      src="images/wind-direction.png"
+                      alt=""
+                      id="wind_dir_img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="right-side">
+            <div class="forecast-next-5-days-info">
+              <h2 class="forecast-next-5-days">Forecast next 5 days</h2>
+              <div class="days-sub-containers">
+                <div class="day1" id="next_1">
+                  <div class="day" id="day">Mon</div>
+                  <div class="conditions">
+                    <img src="images/clear-day.png" alt="" />
+                  </div>
+                  <div class="temp" id="temp">11°C</div>
+                </div>
+                <div class="day2" id="next_2">
+                  <div class="day" id="day">Mon</div>
+                  <div class="conditions">
+                    <img src="images/clear-day.png" alt="" />
+                  </div>
+                  <div class="temp" id="temp">11°C</div>
+                </div>
+                <div class="day3" id="next_3">
+                  <div class="day" id="day">Mon</div>
+                  <div class="conditions">
+                    <img src="images/clear-day.png" alt="" />
+                  </div>
+                  <div class="temp" id="temp">11°C</div>
+                </div>
+                <div class="day4" id="next_4">
+                  <div class="day" id="day">Mon</div>
+                  <div class="conditions">
+                    <img src="images/clear-day.png" alt="" />
+                  </div>
+                  <div class="temp" id="temp">11°C</div>
+                </div>
+                <div class="day5" id="next_5">
+                  <div class="day" id="day">Mon</div>
+                  <div class="conditions">
+                    <img src="images/clear-day.png" alt="" />
+                  </div>
+                  <div class="temp" id="temp">11°C</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="humidity-info">
+              <h2 class="humidity-title">Humidity</h2>
+              <div class="humidity-sub-containers">
+                <div class="img-container">
+                  <img src="images/humidity-icon.png" alt="" />
+                </div>
+                <div class="data-container">
+                  <div class="humidity" id="humidity_percentage"></div>
+                  <div class="visibility" id="humidity_visibility"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
